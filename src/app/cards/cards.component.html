@@ -1,0 +1,13 @@
+ <div class="container">
+      <div class="card" id="{{card.id}}" *ngFor="let card of cards">
+        <p class="{{card.titleClass}}">{{card.title}}</p>
+        <p class="p2">{{card.pricePerYear}}</p>
+        <p>{{card.r1}}</p>
+        <p>{{card.r2}}</p>
+        <p>{{card.r3}}</p>
+        <p>{{card.r4}}</p>
+        <div class="b-div">
+          <button class="bbu"(click)="expandCard(card.expandCardValue)">Select</button>
+        </div>
+      </div>
+    </div>
